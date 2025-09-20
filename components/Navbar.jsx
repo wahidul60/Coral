@@ -49,21 +49,21 @@ export default function Navbar() {
             <div className='relative hidden md:flex flex-grow bg-[#e7e7e7] mx-4 rounded'>
               <input
                 type="text" 
-                placeholder='search '
-                className='px-4 my-2 w-full text-[10px] md:text-[14px]'
+                placeholder='search'
+                className='px-4 my-2 w-full text-[10px] text-black placeholder:text-[#898989] md:text-[14px]'
               />              
-              <IoSearch className='absolute hidden md:flex top-1/2 -translate-y-1/2 right-4'/>
+              <IoSearch className='absolute hidden md:flex text-[#898989] top-1/2 -translate-y-1/2 right-4'/>
             </div>
 
             <Flex className={`items-center gap-4 ${inter.className} justify-end`}>
-              <RiAccountCircleLine  />
+              <RiAccountCircleLine  className='text-black text-[20px]'/>
 
               <a className='text-[11px] hidden md:inline' href="">
                 Sign in <br /> <span className='font-bold'>Account</span>
               </a>
 
-              <FaRegHeart />
-              <RiShoppingCartLine />
+              <FaRegHeart className='text-black text-[20px]'/>
+              <RiShoppingCartLine className='text-black text-[20px]'/>
 
             </Flex>
           </Flex>
