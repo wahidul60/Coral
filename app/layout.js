@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TopSection from "@/components/TopSection";
 import SearchBarForSM from "@/components/SearchBarForSM";
+import Menubar from "@/components/Menubar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <TopSection/>
         <Navbar/>
         <SearchBarForSM/>
+        <Menubar/>
         {children}
         <Footer/>
 
